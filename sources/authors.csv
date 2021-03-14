@@ -1,0 +1,5 @@
+ID,name,email,firstname,lastname,Status,roles,Password
+1,opensense,opensenses@example.com,open,sense,1,administrator,open@321
+2,prasad,prasad@example.com,prasad,xyz,1,authenticated,open@321
+3,dummy,dummy@example.com,Dummy,User,1,authenticated,open@321
+4,om,om@example.com,om,mankar,1,administrator,open@321

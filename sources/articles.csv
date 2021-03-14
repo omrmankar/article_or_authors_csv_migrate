@@ -1,0 +1,10 @@
+ID,title,author_name,field_tags,body
+1,News article 1,1,"      1,2","Build something amazing.
+With over 200 new features and improvements.
+The world’s favorite open source content management platform just got better. Drupal 8 is the new standard for creating incredible digital experiences—for small businesses, global enterprises, and everything in between."
+2,News article 2,2,"      1,2","Tools for systems
+Meet Drupal 8, a powerful new suite of tools, and the strongest link in your new content supply chain. Interact with countless applications, thanks to REST-first native web services. Use progressive decoupling to break free from back-end restrictions without sacrificing security and accessibility. Deliver faster, with enhanced entity caching and better integration with CDNs and reverse proxies. With Drupal 8, you can build almost any integrated experience you can imagine."
+3,News article 3,3,"      1,2","Simplicity for editors
+Turn great ideas into great experiences. Leave your desktop behind and create compelling content on more modern devices than ever. Work efficiently with better previews and drag-and-drop image uploads. And when you need to make quick changes, choose in-context editing and use only the tools you need."
+4,News article 4,4,"      1,2,3","Power for administrators
+It's easier to customize components—views, lists, blocks, admin tools, and more—than ever before. Control how data is displayed without using a single line of code. Structure content with more field types, and add SEO-friendly meaning with native Schema.org markup. Make creating and managing content a great experience too."

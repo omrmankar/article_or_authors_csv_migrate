@@ -1,0 +1,28 @@
+id: authors
+migration_tags: null
+migration_group: default
+label: 'Authors migration from CSV'
+source:
+  plugin: csv
+  # Full path to the file.
+  path: 'modules/custom/article_or_authors_csv_migrate/sources/authors.csv'
+  header_row_count: 1
+  keys:
+    - ID
+process:
+  name: name
+  mail: email
+  roles: roles
+  field_last_name: firstname
+  field_first_name: lastname
+  status: Status
+  pass:
+    plugin: callback
+    callable: md5
+    source: Password
+destination:
+  plugin: 'entity:user'
+  md5_passwords: true
+migration_dependencies:
+  required: {  }
+  optional: {  }

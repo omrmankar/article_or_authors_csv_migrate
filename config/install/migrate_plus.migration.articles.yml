@@ -1,0 +1,36 @@
+
+id: articles
+migration_group: default
+label: 'Article CSV Migrate'
+source:
+  plugin: csv
+  # Full path to the file.
+  path: 'modules/custom/article_or_authors_csv_migrate/sources/articles.csv'
+  # Column delimiter. Comma (,) by default.
+  delimiter: ','
+  # Field enclosure. Double quotation marks (") by default.
+  enclosure: '"'
+  # The row to be used as the CSV header (indexed from 0),
+  # or null if there is no header row.
+  header_offset: 0
+  header_row_count: 1
+  keys:
+    - ID
+
+process:
+  title: title
+  body: body
+  field_tags:
+   -
+      plugin: explode
+      source: field_tags
+      delimiter: ','
+  created: timestamp
+  uid: author_name
+  type:
+    plugin: default_value
+    default_value: article
+
+destination:
+  plugin: 'entity:node'
+
